@@ -57,7 +57,7 @@ export default function CityFlySkyFooter() {
 
 
             <div className="dao-footer-part3">
-                Copyright@2022 www.cityflysky.top
+                Copyright@2022 cityflysky.top
             </div>
         </FooterBox>
     )
