@@ -4,14 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import ConnectWallet from "./connect-wallet";
 function CityFlyskyHeader() {
     const HeaderInfo = styled.div`
-      background: rgba(0,0,0,0.7);
-      height: 230px;
+      background: rgb(0, 142, 236);
       background-size: 100% 100%;
       color: #fff;
       font-weight: bold;
       position: relative;
       width: 100%;
       overflow: hidden;
+
       .navbar-box-bg {
         width: 1920px;
         height: 60px;
@@ -27,6 +27,7 @@ function CityFlyskyHeader() {
         width: 1200px;
         align-items: center;
         margin: 0 auto;
+
         .logo {
           width: 3em;
           height: 3em;
@@ -43,6 +44,7 @@ function CityFlyskyHeader() {
             overflow: hidden;
             cursor: pointer;
             margin: 0 30px;
+
             .w-font {
               position: relative;
               top: 0;
@@ -55,7 +57,7 @@ function CityFlyskyHeader() {
               top: 40px;
               left: 0;
               transition: 0.2s;
-              background-image: linear-gradient(90deg, #12c2e9 0%, #c471ed 64%, #f64f59 100%);
+              background-image: linear-gradient(90deg, #f8f8f8 0%, #f8f8f8 64%, #f8f8f8 100%);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             }
