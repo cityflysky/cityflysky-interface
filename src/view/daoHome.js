@@ -45,7 +45,7 @@ function DaoHome (props){
                     </div>
                 </div>
                 <div className="content">
-                    <button onClick={()=>transfer()}>Test ERC20</button>
+                    <button  onClick={()=>transfer()}>Transfer ERC20</button>
                 </div>
             </div>
 
