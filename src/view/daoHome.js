@@ -6,6 +6,10 @@ import {getContractByName} from "../api/connectContract"
 function DaoHome (props){
 
     const DaoHome = styled.div`
+      padding: 3em 10%;
+        .title{
+          
+        }
     `
     const { state, dispatch } = useConnect();
     let contract
@@ -29,24 +33,12 @@ function DaoHome (props){
     }
     return (
         <DaoHome className='daoHome daoContentBg'>
+            <h1 className="title">
+                All Citys
+            </h1>
+
             <div className="content-box">
-                <div className="box-nav">
-                    <div className="item">
-                        HOME
-                    </div>
-                    <div className="item">
-                        PROPOSAL
-                    </div>
-                    <div className="item">
-                        FINANCIAL
-                    </div>
-                    <div className="item">
-                        MEMBER
-                    </div>
-                </div>
-                <div className="content">
-                    <button  onClick={()=>transfer()}>Transfer ERC20</button>
-                </div>
+
             </div>
 
         </DaoHome>
