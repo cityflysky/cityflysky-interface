@@ -27,6 +27,10 @@ function DaoHome (props){
                 gas: 100000
             }).then(res => {
                 console.log(res)
+                alert('success')
+            }).catch(e=>{
+                console.log(e)
+                alert(e)
             })
         }
     }

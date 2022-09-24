@@ -2,7 +2,7 @@ import erc20Abi from '../abi/erc20.json';
 import cityzen from '../abi/cityzen.json';
 const CONTRACTS = {
     erc20:{address:"0x46B85F2E50BFB50F4F78d29e98E679a859d5F839",abi:erc20Abi},
-    cityzen:{address:"0x91BD3B062AdDF59CAa75F47A6995ca04cAbfA478",abi:cityzen},
+    cityzen:{address:"0x4a07178346ef366baf8aC23d4cebe67fe8Fe2e4A",abi:cityzen},
 };
 
 function getContractByName(name, web3) {
