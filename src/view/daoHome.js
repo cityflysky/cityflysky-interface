@@ -14,16 +14,15 @@ function DaoHome (props){
     const { state, dispatch } = useConnect();
     let contract
     useEffect(async () => {
-        console.log(state.api)
-
-        contract =await getContractByName("erc20",state.api,)
+        console.log(state.api,state.account)
+        contract =await getContractByName("cityzen",state.api)
         console.log(contract)
 
     }, []);
-    const transfer = ()=>{
+    const joinCity = ()=>{
         console.log(contract)
         if(contract){
-            contract.methods.transfer("0x931f176Bee590f13ca2B9D163C135F065c7A22cC", 22330000).send({
+            contract.methods.joinCity().send({
                 from: state.account,
                 gas: 100000
             }).then(res => {
@@ -38,7 +37,9 @@ function DaoHome (props){
             </h1>
 
             <div className="content-box">
-
+                <button onClick={()=>{
+                    joinCity()
+                }}>JOIN</button>
             </div>
 
         </DaoHome>

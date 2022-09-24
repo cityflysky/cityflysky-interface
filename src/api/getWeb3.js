@@ -8,6 +8,7 @@ const getWeb3= async (provider)=>{
         }else if (typeof web3js !== 'undefined') {
             let web3 = new Web3(web3js.currentProvider)
             curProvider = web3js.currentProvider
+            console.log(curProvider)
             resolve({
                 web3,
                 account: curProvider.accounts && curProvider.accounts.length > 0 ? curProvider.accounts[0] : null

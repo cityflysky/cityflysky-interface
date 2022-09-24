@@ -13,12 +13,16 @@ const connect = async (state, dispatch) => {
 
     dispatch({type: 'CONNECT_INIT'});
     try{
+        if (typeof window.ethereum == 'undefined') {
+            alert("please down metamask first")
+        }
         await window.ethereum.enable()
     }catch (e){
         alert(e)
     }
     await getWeb3().then(result => {
-        console.log(result.web3)
+
+
         dispatch({type: "CONNECT", payload: result.web3})
 
 
@@ -29,6 +33,7 @@ const connect = async (state, dispatch) => {
         result.web3.eth.getCoinbase().then(account => {
             console.log(account)
             dispatch({type: "SET_ACCOUNT", payload: account})
+            console.log(account)
             if(account){
                 dispatch({type: "CONNECT_SUCCESS"})
             }
